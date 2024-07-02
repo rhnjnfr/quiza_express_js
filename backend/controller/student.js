@@ -38,7 +38,7 @@ export const createStudent=(req, res) => {
         if(err){
             if(err === 'ER_DUP_ENTRY'){
                 res.status(409).send({ error: 'ER_DUP_ENTRY' });
-                res.send('ER_DUP_ENTRY')
+                // res.send('ER_DUP_ENTRY')
             }
             else{
                 res.send(err);
